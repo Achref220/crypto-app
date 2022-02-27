@@ -1,0 +1,23 @@
+{
+  "id": "achref",
+  "api": {
+    "regions": [
+      "frankfurt",
+      "us"
+    ],
+    "version": "3",
+    "password": "xSjl4tAsPcw2EGCET3FWpbT4ruGsL7TW",
+    "requires": [],
+    "sso_salt": "Fde59m2aBzVOpWgR3MueAL32g5jvNv7k",
+    "production": {
+      "sso_url": "https://myaddon.com/sso/login",
+      "base_url": "https://myaddon.com/heroku/resources"
+    },
+    "config_vars": [
+      "ACHREF_URL"
+    ],
+    "config_vars_prefix": "ACHREF"
+  },
+  "name": "AppAddon",
+  "$base": 164599534576498
+}

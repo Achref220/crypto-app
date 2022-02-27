@@ -1,0 +1,41 @@
+.maincon{
+    background-image: url("https://www.ibm.com/blogs/blockchain/wp-content/uploads/2019/12/Retina_Display-758591537.jpg");
+    height: 93vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+.form-2 h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+.form-2 input{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: rgba(240, 248, 255, 0.699);
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.form-2 input::placeholder{
+    text-align: center;
+}
+.form-2 button{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(8, 190, 190, 0.61);
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    color: wheat;
+}

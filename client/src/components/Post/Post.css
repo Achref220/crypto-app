@@ -1,0 +1,126 @@
+
+.main-f form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    text-align: center;
+    margin: 100px 50px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(53, 4, 99);
+}
+
+.main-f form input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border-color: rgb(11, 11, 51);
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: solid rgba(53, 46, 46, 0.445);
+}
+.main-f form textarea {
+    width: 400px;
+    height: 100px;
+    outline: none;
+    border: solid rgba(53, 46, 46, 0.445);;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+.main-f form label {
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(73, 43, 102);
+}
+.main-f form button {
+    width: 250px;
+    height: 40px;
+    background-color: rgba(11, 36, 36, 0.61);
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.main-f form button:hover {
+    background-color: blueviolet;
+}
+.main-item{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+    background-color: rgba(137, 43, 226, 0.5);
+    width: 300px;
+    height: 350px;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: rgb(46, 43, 43) solid;
+}
+.item h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.btn11 {
+    
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 16px;
+    right: 17px;
+    padding: 5px 5px;
+    color: rgb(253, 253, 253);
+    background-color: blueviolet;
+}
+.btn11:hover {
+    background-color: red;
+}
+.up-div{
+    background-color: blueviolet;
+    width: 500px;
+    padding: 50px 100px;
+    position: absolute;
+    top: 550px;
+    left: 420px;
+    border-radius: 10px;
+}
+
+.up-input {
+    width: 300px !important;
+    border-radius: 10px;
+    border: none;
+}
+
+.up-btn{
+    width: 50px !important;
+    position: relative;
+    left: 220px;
+    bottom: 45px;
+}
+
+.update-btn {
+    position: absolute;
+    top: 628px;
+    padding: 5px 5px;
+    background-color: blueviolet;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+    text-transform: uppercase;
+}
+.update-btn:hover{
+    background-color: rgb(10, 70, 50);
+}

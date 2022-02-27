@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "dotenv": "^14.3.2",
+    "nodemon": "^2.0.15"
+  },
+  "name": "cryptocurrency-price-tracker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd client && yarn run build",
+    "install-client": "cd client && yarn add",
+    "heroku-postbuild": "yarn run install-client && yarn run build",
+    "start": "node server.js",
+    "back": "nodemon server",
+    "front": " cd client && yarn start",
+    "dev": "concurrently  \"yarn run back\" \"yarn run front \""
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "mongodb",
+    "atlas"
+  ],
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.8"
+  }
+}
