@@ -7,9 +7,6 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd client && yarn build",
-    "install-client": "cd client && yarn add",
-    "heroku-postbuild": "yarn run install-client && yarn build",
     "start": "node server.js",
     "back": "nodemon server",
     "front": " cd client && yarn start",
@@ -19,7 +16,8 @@
     "express",
     "mongoose",
     "mongodb",
-    "atlas"
+    "atlas",
+    "heroku"
   ],
   "dependencies": {
     "bcrypt": "^5.0.1",
