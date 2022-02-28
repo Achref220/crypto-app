@@ -71,8 +71,8 @@
 }
 .iconCardsItem:nth-child(2){
     transform: rotateY(144deg) translateZ(145px);
-    background: url("https://media.istockphoto.com/photos/new-virtual-money-concept-gold-bitcoins-is-digital-cryptocurrency-use-picture-id919509810?k=20&m=919509810&s=612x612&w=0&h=608jUrOPLI5vN_3L_fh-ik2Sc4LGT8ZlxnA1qXfuMZY="); 
-    background-size: 318px;
+    background: url("https://imageio.forbes.com/specials-images/imageserve/5f8b89bfe460637ff557be8c/Bitcoin-cryptocurrency-security--and-mining-concept--Safe-lock-with-symbol-of-bitcoin/960x0.jpg?fit=bounds&format=jpg&width=960"); 
+    background-size: 285px;
     background-repeat: no-repeat;
 }
 
