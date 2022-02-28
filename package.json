@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "dotenv": "^14.3.2",
+    "dotenv": "14.3.2",
     "nodemon": "^2.0.15"
   },
   "name": "cryptocurrency-price-tracker",
