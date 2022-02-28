@@ -7,9 +7,9 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd client && yarn run build",
-    "install-client": "cd client && yarn install",
-    "heroku-postbuild": "yarn run install-client && yarn run build",
+    "build": "cd client && yarn build",
+    "install-client": "cd client && yarn add",
+    "heroku-postbuild": "yarn run install-client && yarn build",
     "start": "node server.js",
     "back": "nodemon server",
     "front": " cd client && yarn start",
