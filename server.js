@@ -13,9 +13,11 @@ app.use(express.json());
 connectDB();
 const port = process.env.PORT || 4500;
 app.use("/api/user", routes, postRouter);
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'))
-}
+
+app.use(express.static(path.join(__dirname, '../build')))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build'))
+})
 
 
 

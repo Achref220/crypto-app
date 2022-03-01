@@ -7,14 +7,15 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "start": "node server.js",
     "back": "nodemon server",
     "front": " cd client && npm start",
     "dev": "concurrently  \"npm run back\" \"npm run front \""
   },
+   "engines": {
+        "node": "16.13.1"
+    },
   "keywords": [
     "express",
     "mongoose",
