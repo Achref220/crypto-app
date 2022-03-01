@@ -13,7 +13,7 @@ import {
 export const register = (user) => async (dispatch) => {
     dispatch({ type: LOAD_USER });
     try {
-        let res = await axios.post("http://localhost:4500/api/user/add", user);
+        let res = await axios.post("/api/user/add", user);
         dispatch({ type: REGISTER_USER, payload: res.data });
     } catch (err) {
         dispatch({ type: FAIL_USER, payload: err })
@@ -26,7 +26,7 @@ export const login = (user) => async (dispatch) => {
     dispatch({ type: LOAD_USER });
     try {
         let res = await axios.post(
-            "http://localhost:4500/api/user/login", user
+            "/api/user/login", user
         );
         dispatch({ type: LOGIN_USER, payload: res.data })
     } catch (err) {
@@ -44,7 +44,7 @@ export const current = () => async (dispatch) => {
             },
         };
         let res = await axios.get(
-            "http://localhost:4500/api/user/current",
+            "/api/user/current",
             config
         );
         dispatch({ type: CURRENT_USER, payload: res.data });

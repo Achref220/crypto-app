@@ -11,7 +11,7 @@ app.use(cors());
 require('dotenv').config();
 app.use(express.json());
 connectDB();
-const port = 4500;
+const port = process.env.PORT || 4500;
 app.use("/api/user", routes, postRouter);
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
