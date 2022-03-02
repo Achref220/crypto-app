@@ -31,7 +31,9 @@ function App() {
         <Route exact path="/stats" element={<PrivateRoute/>}> 
           <Route exact path="/stats" element={<CoinsStats />} />
         </Route>
+        <Route exact path="/posts" element={<PrivateRoute />}>
           <Route path='/posts' element={<Post />} />
+        </Route>
         <Route path='/Register' element={<Register />} />
         <Route exact path="/Login" element={<Login />} />
       </Routes>
